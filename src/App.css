@@ -21,19 +21,19 @@ html, body, #root {
 }
 
 header {
-  position: absolute;
   z-index: 99;
   width: 100%;
   padding: 60px;
 } 
 
+
+/* Navbar */
 .header-inner {
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 
-/* Nvabar */
 ul {
   margin: 0;
   padding: 0;
@@ -91,7 +91,7 @@ a:hover:after {
 
 /* About */
 .about {
-  margin: 200px 0 0 300px;
+  margin: 100px 0 0 200px;
 }
 
 .about h1 {
@@ -106,3 +106,4 @@ a:hover:after {
   font-size: 2rem;
   margin: 0;
 }
+

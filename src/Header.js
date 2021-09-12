@@ -16,12 +16,6 @@ function Header() {
         </ul>
       </nav>
     </div>
-    <div className = "about">
-      <h1>Piyush</h1>
-      <h1>Singh</h1>
-      <h3 style = {{marginTop:30}}>web developer /</h3>
-      <h3 style = {{marginTop:10}}>a programmer. </h3>
-    </div>
   </header>
   );
 }
