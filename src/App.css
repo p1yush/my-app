@@ -91,7 +91,7 @@ a:hover:after {
 
 /* About */
 .about {
-  margin: 100px 0 0 200px;
+  margin: 150px 0 0 200px;
 }
 
 .about h1 {
@@ -105,5 +105,15 @@ a:hover:after {
   font-family: 'Courier New', Courier, monospace;
   font-size: 2rem;
   margin: 0;
+}
+
+/*Skills*/
+.skills {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.skills h1 {
+  font-size: 5rem;
 }
 
