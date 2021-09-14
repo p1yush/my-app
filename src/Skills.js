@@ -1,7 +1,7 @@
-function Skills() {
-    return (
-        <div className = "skills">
-        <h1>Skills</h1>
+function Skills(props) {
+    return(
+        <div>
+            <li><h3>{props.name}</h3><span className = "bar"><span className = {props.name}></span></span></li>
         </div>
     )
 }
