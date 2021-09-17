@@ -14,12 +14,15 @@ function App() {
     <Section />
     <div className = "skills">
     <h1>Skills</h1>
+    <div className = "skills-display">
     {skilladd.map((add) => (
       <Skills 
         key = {add.id}
         name = {add.name}
+        colors = {add.colors} 
       />
       ))}
+      </div>
       </div>
     </>
   );

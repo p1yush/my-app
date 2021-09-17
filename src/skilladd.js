@@ -1,23 +1,28 @@
 const skilladd = [
     {
         id: 1,
-        name: "C++"
+        name: "C++",
+        colors: "fifty-percent mb-blue"
     },
     {
         id: 2,
-        name: "HTML"
+        name: "HTML",
+        colors: "eighty-five-percent mb-orange"
     },
     {
         id : 3,
-        name: "CSS"
+        name: "CSS",
+        colors: "eighty-percent mb-light-purple"
     },
     {
         id : 4,
-        name: "Javascipt"
+        name: "Javascipt",
+        colors: "fifty-percent mb-teal"
     },
     {
         id : 5,
-        name: "React"
+        name: "React",
+        colors: "fifty-percent mb-blue"
     }
 ];
 
