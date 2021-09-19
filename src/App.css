@@ -145,3 +145,13 @@ a:hover:after {
   margin-left: 10px;
   vertical-align: middle;
 }
+
+/*Contacts*/
+.contacts {
+  margin-top: 300px;
+  text-align: center;
+}
+
+.contacts {
+  font-size: 5rem;
+}

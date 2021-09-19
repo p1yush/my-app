@@ -4,6 +4,7 @@ import Header from "./Header";
 import Section from "./Section";
 import skilladd from './skilladd';
 import Skills from "./Skills";
+import Contact from "./Contacts";
 
 
 
@@ -24,6 +25,7 @@ function App() {
       ))}
       </div>
       </div>
+      <Contact />
     </>
   );
 }
