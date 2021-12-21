@@ -1,5 +1,6 @@
 function Section() {
     return (
+      <>
       <section>
          <div className = "about">
           <h1>Piyush</h1>
@@ -8,6 +9,7 @@ function Section() {
           <h3 style = {{marginTop:10}}>a programmer. </h3>
         </div>
       </section>
+      </>
     )
 }
 
