@@ -13,6 +13,10 @@ left: 2rem;
 z-index: 3;
 &>*:not(:last-child) {
     margin: 0.5rem 0;
+&:hover {
+    -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
 }
 `
 
