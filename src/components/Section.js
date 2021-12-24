@@ -1,6 +1,9 @@
+import SocialIcons from '../smallComponents/SocialIcons'
+
 function Section() {
     return (
       <>
+      <SocialIcons />
       <section>
          <div className = "about">
           <h1>Piyush</h1>
