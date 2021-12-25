@@ -4,6 +4,7 @@ import SocailIcons from "../smallComponents/SocialIcons";
 import ParticleComponent from "../smallComponents/ParticleComponent";
 
 const Box = styled.div`
+background-color: #FFE3E3; 
 width: 100vw;
 height:100vh;
 position: relative;
@@ -14,6 +15,7 @@ align-items: center;
 const Main = styled.div`
 border: 2px solid black;
 color: black;
+background-color: #FFE3E3; 
 padding: 2rem;
 width: 30vw;
 height: 60vh;
@@ -34,6 +36,9 @@ display: flex;
 justify-content: center;
 align-items: center;
 font-size: calc(1em + 1vh);
+&>*:first-child{
+    margin-right: 1rem;
+    }
 `
 const Description = styled.div`
 color: black;
