@@ -1,8 +1,10 @@
+import { Developer } from "../smallComponents/AllSvgs";
 import styled from "styled-components";
+import SocailIcons from "../smallComponents/SocialIcons";
 
 const Box = styled.div`
 width: 100vw;
-heifht: 100vh;
+height:100vh;
 position: relative;
 display: flex;
 justify-content: space-evenly;
@@ -20,12 +22,50 @@ display: flex;
 flex-direction: column;
 justfy_content: space-between;
 `
+const Title = styled.h2`
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: calc(1em + 1vh);
+`
+const Description = styled.div`
+color: black;
+font-size: calc(0.6em + 1vh);
+padding: 0.5rem 0;
+strong{
+    margin-bottom: 1rem;
+    text-transformation: uppercase;
+}
+p{
+    margin-left: 2rem;
+}
+`
 
 function Skill() {
     return (
         <Box>
+            <SocailIcons />
             <Main>
-
+                <Title>
+                    <Developer width={40} height={40} /> Web Developer
+                </Title>
+                <Description>
+                    I love to develop websites which speaks, clean, minimal and simple
+                </Description>
+                <Description>
+                    <strong>Skills</strong>
+                    <p>HTML, CSS, Javascript, Bootstrap, React, Express, Node, MongoDB, MySQL</p>
+                    <strong>Tools</strong>
+                    <p>VScode, Github ...</p>
+                </Description>
+            </Main>
+            <Main>
+                <Title>
+                    <Developer width={40} height={40} /> Programmer
+                </Title>
+                <Description>
+                    I love to solve new problems.
+                </Description>
             </Main>
         </Box>
     )
