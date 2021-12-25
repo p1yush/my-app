@@ -1,6 +1,7 @@
 import { Developer } from "../smallComponents/AllSvgs";
 import styled from "styled-components";
 import SocailIcons from "../smallComponents/SocialIcons";
+import ParticleComponent from "../smallComponents/ParticleComponent";
 
 const Box = styled.div`
 width: 100vw;
@@ -21,6 +22,12 @@ line-height: 1.5;
 display: flex;
 flex-direction: column;
 justfy_content: space-between;
+transition: transform .2s;
+&:hover {
+    -ms-transform: scale(1.1); 
+  -webkit-transform: scale(1.1); 
+  transform: scale(1.1); 
+}
 `
 const Title = styled.h2`
 display: flex;
@@ -44,6 +51,7 @@ p{
 function Skill() {
     return (
         <Box>
+            <ParticleComponent />
             <SocailIcons />
             <Main>
                 <Title>
