@@ -1,6 +1,6 @@
 import Particles from "react-particles-js"
 import styled from "styled-components"
-import configDark from "../particle/particlejs.json"
+import configLight from "../particle/particle2js.json"
 
 const Box = styled.div`
 position: absolute;
@@ -12,12 +12,12 @@ z-index: 0;
 `
 
 
-function ParticleComponent(props) {
+function ParticleComponent2(props) {
     return (
         <Box>
-           <Particles style={{position: 'absolute', top: 0}} params={configDark} />
+           <Particles style={{position: 'absolute', top: 0}} params={configLight} />
         </Box>
     )
 }
 
-export default ParticleComponent;
+export default ParticleComponent2;
