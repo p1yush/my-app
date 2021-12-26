@@ -13,13 +13,14 @@ left: 2rem;
 z-index: 3;
 &>*:not(:last-child) {
     margin: 0.5rem 0;
+    transition: transform .2s;
 &:hover {
-    -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
+    -ms-transform: scale(1.1); 
+    -webkit-transform: scale(1.1); 
+     transform: scale(1.1); 
+    }
 }
 `
-
 const Line = styled.span`
 width: 2px;
 height: 8rem;
