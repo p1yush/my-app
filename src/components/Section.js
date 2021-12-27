@@ -50,6 +50,14 @@ function Section() {
       <SocialIcons />
       <Contact taget="_blank" to={{pathname: "mailto:rr2rinku@gmail.com"}}>
         <motion.h2
+          initial={{
+            y: -100,
+            transition: {type: 'spring', duration: 1, delay: 1}
+          }}
+          animate={{
+            y: 0,
+            transition: {type: 'spring', duration: 1, delay: 1}
+          }}
           whileHover={{scale: 1.1}}
           whileTap={{scale: 0.9}}
         >
@@ -58,6 +66,14 @@ function Section() {
       </Contact>
       <Work to="/work">
         <motion.h2 
+        initial={{
+          y: -100,
+          transition: {type: 'spring', duration: 1, delay: 0.5}
+        }}
+        animate={{
+          y: 0,
+          transition: {type: 'spring', duration: 1, delay: 0.5}
+        }}
           whileHover={{scale: 1.1}}
           whileTap={{scale: 0.9}}
         >
@@ -67,6 +83,14 @@ function Section() {
        <BottomBar>
         <Skill to="/skill">
           <motion.h2
+          initial={{
+            y: 100,
+            transition: {type: 'spring', duration: 1, delay: 0.5}
+          }}
+          animate={{
+            y: 0,
+            transition: {type: 'spring', duration: 1, delay: 0.5}
+          }}
             whileHover={{scale: 1.1}}
             whileTap={{scale: 0.9}}
           >
@@ -75,6 +99,14 @@ function Section() {
         </Skill>
         <About to="/about">
           <motion.h2
+          initial={{
+            y: 100,
+            transition: {type: 'spring', duration: 1, delay: 0.5}
+          }}
+          animate={{
+            y: 0,
+            transition: {type: 'spring', duration: 1, delay: 0.5}
+          }}
             whileHover={{scale: 1.1}}
             whileTap={{scale: 0.9}}
           >
