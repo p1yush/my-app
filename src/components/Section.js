@@ -46,18 +46,10 @@ z-index: 1;
 
 function Section() {
     return (
-      <>
+      <motion.div initial={{opacity: 0}} transition={{delay: 0.1}} animate={{opacity: 1}}>
       <SocialIcons />
       <Contact taget="_blank" to={{pathname: "mailto:rr2rinku@gmail.com"}}>
-        <motion.h2
-          initial={{
-            y: -100,
-            transition: {type: 'spring', duration: 1, delay: 1}
-          }}
-          animate={{
-            y: 0,
-            transition: {type: 'spring', duration: 1, delay: 1}
-          }}
+        <motion.h2 initial={{y: -100, transition: {type: 'spring', duration: 1, delay: 1}}} animate={{ y: 0, transition: {type: 'spring', duration: 1, delay: 1}}}
           whileHover={{scale: 1.1}}
           whileTap={{scale: 0.9}}
         >
@@ -65,15 +57,7 @@ function Section() {
         </motion.h2>
       </Contact>
       <Work to="/work">
-        <motion.h2 
-        initial={{
-          y: -100,
-          transition: {type: 'spring', duration: 1, delay: 0.5}
-        }}
-        animate={{
-          y: 0,
-          transition: {type: 'spring', duration: 1, delay: 0.5}
-        }}
+        <motion.h2 initial={{ y: -100, transition: {type: 'spring', duration: 1, delay: 0.5}}} animate={{ y: 0, transition: {type: 'spring', duration: 1, delay: 0.5}}}
           whileHover={{scale: 1.1}}
           whileTap={{scale: 0.9}}
         >
@@ -82,15 +66,7 @@ function Section() {
        </Work>
        <BottomBar>
         <Skill to="/skill">
-          <motion.h2
-          initial={{
-            y: 100,
-            transition: {type: 'spring', duration: 1, delay: 0.5}
-          }}
-          animate={{
-            y: 0,
-            transition: {type: 'spring', duration: 1, delay: 0.5}
-          }}
+          <motion.h2 initial={{ y: 100, transition: {type: 'spring', duration: 1, delay: 0.5}}} animate={{ y: 0, transition: {type: 'spring', duration: 1, delay: 0.5}}}
             whileHover={{scale: 1.1}}
             whileTap={{scale: 0.9}}
           >
@@ -98,15 +74,7 @@ function Section() {
           </motion.h2>
         </Skill>
         <About to="/about">
-          <motion.h2
-          initial={{
-            y: 100,
-            transition: {type: 'spring', duration: 1, delay: 0.5}
-          }}
-          animate={{
-            y: 0,
-            transition: {type: 'spring', duration: 1, delay: 0.5}
-          }}
+          <motion.h2 initial={{ y: 100, transition: {type: 'spring', duration: 1, delay: 0.5}}} animate={{ y: 0, transition: {type: 'spring', duration: 1, delay: 0.5}}}
             whileHover={{scale: 1.1}}
             whileTap={{scale: 0.9}}
           >
@@ -122,7 +90,7 @@ function Section() {
           <h3 style = {{marginTop:10}}>a programmer. </h3>
         </div>
       </section>
-      </>
+      </motion.div>
     )
 }
 

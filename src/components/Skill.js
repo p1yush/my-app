@@ -56,8 +56,7 @@ p{
 
 function Skill() {
     return (
-        <motion.div initial={{translateY: 500}} animate={{ translateY: 0}}
-        transition={{ type: "spring", stiffness: 100, duration: 1.5 }}>
+        <motion.div initial={{ y: 500, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ type: "spring", stiffness: 100, duration: 1.5 }}>
         <Box>
             <ParticleComponent />
             <SocailIcons />
