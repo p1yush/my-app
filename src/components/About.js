@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import SocailIcons from "../smallComponents/SocialIcons";
 import ParticleComponent2 from "../smallComponents/ParticleComponent2";
+import { motion } from "framer-motion";
+
 
 const Box = styled.div`
 background-color: #FFE3E3; 
@@ -30,6 +32,8 @@ top: 10rem;
 
 function About() {
     return (
+        <motion.div initial={{ translateY: 500}} animate={{ translateY: 0 }}
+        transition={{ type: "spring", stiffness: 100, duration: 1.5 }}>
         <Box>
             <ParticleComponent2 />
             <SocailIcons />
@@ -42,6 +46,7 @@ function About() {
             </Main>
             
         </Box>
+        </motion.div>
     )
 }
 export default About;

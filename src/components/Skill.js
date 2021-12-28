@@ -2,6 +2,7 @@ import { Developer } from "../smallComponents/AllSvgs";
 import styled from "styled-components";
 import SocailIcons from "../smallComponents/SocialIcons";
 import ParticleComponent from "../smallComponents/ParticleComponent";
+import { motion } from "framer-motion";
 
 const Box = styled.div`
 background-color: #FFE3E3; 
@@ -55,6 +56,8 @@ p{
 
 function Skill() {
     return (
+        <motion.div initial={{translateY: 500}} animate={{ translateY: 0}}
+        transition={{ type: "spring", stiffness: 100, duration: 1.5 }}>
         <Box>
             <ParticleComponent />
             <SocailIcons />
@@ -81,6 +84,7 @@ function Skill() {
                 </Description>
             </Main>
         </Box>
+        </motion.div>
     )
 }
 export default Skill;

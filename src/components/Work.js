@@ -43,14 +43,19 @@ function Work() {
         return() => window.addEventListener('scroll', rotate)
     }, [])
     return (
+        <>
+        <SocailIcons />
+        <motion.div initial={{x: -100}} animate={{ x: 0 }}
+        transition={{ type: "spring", stiffness: 100, duration: 1.5}}>
         <Box>
-            <SocailIcons />
             <Main ref={ref} variants={container} initial='hidden' animate='show'> 
                 {workData.map(project => 
                 <Card key={project.id} data={project} />
                 )}
             </Main>
         </Box>
+        </motion.div>
+        </>
     )
 }
 export default Work;
