@@ -22,11 +22,12 @@ line-height: 3;
 display: flex;
 justify-content: center;
 align-items: center;
-font-size: calc(0.6rem + 1vh);
+font-size: calc(0.7rem + 1vh);
 backdrop-filter: blur(4px);
 position: absolute;
-left: 10rem;
-top: 10rem;
+left: 27rem;
+top: 12rem;
+font-family: 'Montserrat', sans-serif;
 `
 
 

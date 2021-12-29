@@ -43,9 +43,9 @@ function SocailIcons() {
         animate={{scale:[0,1,1.5,1]}}
         transition={{type:'spring', duration:0.8, delay: 0.8}}
         >
-            <NavLink style={{color:'inherit'}} to ={{pathname:"https://github.com/p1yush"}} target="_blank">
+            <a style={{color:'inherit'}} href="https://github.com/p1yush">
                 <Hover><Github width={25} height={25} fill='currentColor' /></Hover>
-            </NavLink>
+            </a>
         </motion.div>
         <motion.div 
         initial={{transform:"scale(0)"}}
@@ -73,4 +73,4 @@ function SocailIcons() {
     )
 }
 
-export default SocailIcons
+export default SocailIcons;
