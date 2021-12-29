@@ -37,6 +37,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 font-size: calc(1em + 1vh);
+font-family: 'Montserrat', sans-serif;
 &>*:first-child{
     margin-right: 1rem;
     }
@@ -45,6 +46,7 @@ const Description = styled.div`
 color: black;
 font-size: calc(0.6em + 1vh);
 padding: 0.5rem 0;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 strong{
     margin-bottom: 1rem;
     text-transformation: uppercase;

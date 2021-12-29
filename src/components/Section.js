@@ -10,6 +10,8 @@ top: 2rem;
 right: calc(1rem + 2vw);
 text-decoration: none;
 z-index: 1;
+font-family: 'Courier New', Courier, monospace;
+font-weight: bold;
 `
 
 const Work = styled(NavLink)`
@@ -20,6 +22,8 @@ right: calc(1rem + 2vw);
 transform: rotate(90deg) translate(-50%, -50%);
 text-decoration: none;
 z-index: 1;
+font-family: 'Courier New', Courier, monospace;
+font-weight: bold;
 `
 
 const BottomBar = styled.div`
@@ -36,12 +40,16 @@ const About = styled(NavLink)`
 color: black;
 text-decoration: none;
 z-index: 1;
+font-family: 'Courier New', Courier, monospace;
+font-weight: bold;
 `
 
 const Skill = styled(NavLink)`
 color: black;
 text-decoration: none;
 z-index: 1;
+font-family: 'Courier New', Courier, monospace;
+font-weight: bold;
 `
 
 function Section() {
