@@ -1,4 +1,4 @@
-import { Developer } from "../smallComponents/AllSvgs";
+import { Developer, Programmer } from "../smallComponents/AllSvgs";
 import styled from "styled-components";
 import SocailIcons from "../smallComponents/SocialIcons";
 import ParticleComponent from "../smallComponents/ParticleComponent";
@@ -81,7 +81,7 @@ function Skill() {
             </Main>
             <Main>
                 <Title>
-                    <Developer width={40} height={40} /> Programmer
+                    <Programmer width={40} height={40} /> Programmer
                 </Title>
                 <Description>
                     I love to solve new problems.

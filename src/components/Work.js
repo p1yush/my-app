@@ -19,6 +19,7 @@ top: 12rem;
 left: calc(10rem + 15vh);
 display: flex;
 color: white;
+font-family: 'Montserrat', sans-serif;
 `
 const container = {
     hidden: {opacity: 0},

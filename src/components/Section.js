@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import SocialIcons from '../smallComponents/SocialIcons'
 
-const Contact = styled(NavLink)`
+const Contact = styled.a`
 color: black;
 position: absolute;
 top: 2rem;
@@ -12,6 +12,7 @@ text-decoration: none;
 z-index: 1;
 font-family: 'Courier New', Courier, monospace;
 font-weight: bold;
+font-size: 20px;
 `
 
 const Work = styled(NavLink)`
@@ -24,6 +25,7 @@ text-decoration: none;
 z-index: 1;
 font-family: 'Courier New', Courier, monospace;
 font-weight: bold;
+font-size: 17px;
 `
 
 const BottomBar = styled.div`
@@ -42,6 +44,7 @@ text-decoration: none;
 z-index: 1;
 font-family: 'Courier New', Courier, monospace;
 font-weight: bold;
+font-size: 17px;
 `
 
 const Skill = styled(NavLink)`
@@ -50,13 +53,14 @@ text-decoration: none;
 z-index: 1;
 font-family: 'Courier New', Courier, monospace;
 font-weight: bold;
+font-size: 17px;
 `
 
 function Section() {
     return (
       <motion.div initial={{opacity: 0}} transition={{delay: 0.1}} animate={{opacity: 1}}>
       <SocialIcons />
-      <Contact taget="_blank" to={{pathname: "mailto:rr2rinku@gmail.com"}}>
+      <Contact href="mailto:rr2rinku@gmail.com">
         <motion.h2 initial={{y: -100, transition: {type: 'spring', duration: 1, delay: 1}}} animate={{ y: 0, transition: {type: 'spring', duration: 1, delay: 1}}}
           whileHover={{scale: 1.1}}
           whileTap={{scale: 0.9}}

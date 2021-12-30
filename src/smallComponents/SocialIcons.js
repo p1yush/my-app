@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
-import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-import {Github, Twitter, Facebook} from "./AllSvgs";
+import {Github, Twitter, Instagram, LinkedIn} from "./AllSvgs";
 
 const Icon = styled.div`
 display: flex;
@@ -41,7 +40,7 @@ function SocailIcons() {
         <motion.div 
         initial={{transform:"scale(0)"}}
         animate={{scale:[0,1,1.5,1]}}
-        transition={{type:'spring', duration:0.8, delay: 0.8}}
+        transition={{type:'spring', duration:0.8, delay: 0.9}}
         >
             <a style={{color:'inherit'}} href="https://github.com/p1yush">
                 <Hover><Github width={25} height={25} fill='currentColor' /></Hover>
@@ -50,20 +49,29 @@ function SocailIcons() {
         <motion.div 
         initial={{transform:"scale(0)"}}
         animate={{scale:[0,1,1.5,1]}}
+        transition={{type:'spring', duration:0.8, delay: 0.8}}
+        >
+            <a style={{color:'inherit'}} href="https://www.linkedin.com/in/piyush-singh-552816119/">
+                <Hover><LinkedIn width={25} height={25} fill='currentColor' /></Hover>
+            </a>
+        </motion.div>
+        <motion.div 
+        initial={{transform:"scale(0)"}}
+        animate={{scale:[0,1,1.5,1]}}
         transition={{type:'spring', duration:0.8, delay: 0.7}}
         >
-            <NavLink style={{color:'inherit'}} to ={{pathname:"https://twitter.com/rinku_ronaldo"}} target="_blank">
+            <a style={{color:'inherit'}} href="https://twitter.com/rinku_ronaldo">
                <Hover><Twitter width={25} height={25} fill='currentColor' /></Hover> 
-            </NavLink>
+            </a>
         </motion.div>
         <motion.div 
         initial={{transform:"scale(0)"}}
         animate={{scale:[0,1,1.5,1]}}
         transition={{type:'spring', duration:0.8, delay: 0.6}}
         >
-            <NavLink style={{color:'inherit'}} to ={{pathname:"https://www.facebook.com/rinku.ronaldo.7"}} target="_blank">
-             <Hover><Facebook width={25} height={25} fill='currentColor' /></Hover> 
-            </NavLink>
+            <a style={{color:'inherit'}} href="https://www.instagram.com/piyush2oo2/">
+             <Hover><Instagram width={25} height={25} fill='currentColor' /></Hover> 
+            </a>
         </motion.div>
         <Line 
         initial={{ height: 0 }}

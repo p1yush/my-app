@@ -13,8 +13,10 @@ body {
 }
 
 html, body, #root {
-  margin: 0;
-  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow:hidden;
+  position: relative;
 }
 
 /* About */
@@ -34,4 +36,5 @@ html, body, #root {
   font-size: 2rem;
   margin: 0;
 }
+
 

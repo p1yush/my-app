@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { Github } from "./AllSvgs";
 
@@ -42,7 +41,7 @@ const Footer = styled.footer`
 display: flex;
 justify-content: space-between;
 `
-const Link = styled(NavLink)`
+const Link = styled.a`
 background-color: black;
 color: aliceblue;
 text-decoration: none;
@@ -55,7 +54,7 @@ transition: transform .2s;
   transform: scale(1.1); 
 }
 `
-const Git = styled(NavLink)`
+const Git = styled.a`
 color: inherit;
 text-decoration: none;
 transition: transform .2s;
@@ -90,10 +89,10 @@ function Card(props) {
                 })}
             </Tags>
             <Footer>
-                <Link to={{pathname: `${demo}`}} target="_blank">
+                <Link href={demo}>
                     Visit
                 </Link>
-                <Git to={{pathname: `${github}`}} target="_blank">
+                <Git href={github}>
                     <Github width={30} height={30} />
                 </Git>
             </Footer>
