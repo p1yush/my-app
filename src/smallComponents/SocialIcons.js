@@ -19,6 +19,9 @@ z-index: 3;
      transform: scale(1.1); 
     }
 }
+@media (max-width: 40em) {
+    left: 1rem;
+}
 `
 const Line = styled(motion.span)`
 width: 2px;

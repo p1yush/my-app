@@ -7,11 +7,16 @@ import { motion } from "framer-motion";
 const Box = styled.div`
 background-color: #FFE3E3; 
 width: 100vw;
-height:100vh;
+height: 100vh;
 position: relative;
 display: flex;
 justify-content: space-evenly;
 align-items: center;
+@media (max-width: 50em) {
+    flex-direction: column;
+    padding: 8rem 0;
+    height: auto;
+}
 `
 const Main = styled.div`
 border: 2px solid black;
@@ -31,31 +36,64 @@ transition: transform .2s;
   -webkit-transform: scale(1.1); 
   transform: scale(1.1); 
 }
+@media (max-width: 60em) {
+    height: 55vh;
+}
+@media (max-width: 50em) {
+    width: 50vw;
+    height: max-content;
+}
+@media (max-width: 50em) {
+    &>:nth-child(5) {
+        margin-bottom: 5rem;
+    }
+}
+@media (max-width: 30em) {
+    &>:nth-child(5) {
+      margin-bottom: 4rem;
+  }
 `
 const Title = styled.h2`
 display: flex;
 justify-content: center;
 align-items: center;
-font-size: calc(1em + 1vh);
+font-size: calc(1.5em + 1vh);
 font-family: 'Montserrat', sans-serif;
 font-weight: bold;
-font-size: 40px;
 &>*:first-child{
     margin-right: 1rem;
     }
+@media (max-width: 60em) {
+    font-size: calc(0.8em + 1vh);
+}
+@media (max-width: 50em) {
+    font-size: calc(1em + 2vh);
+    margin-bottom: 1rem;
+}
+@media (max-width: 30em) {
+    font-size: calc(1em + 1vh);
+}
+@media (max-width: 25em) {
+    font-size: calc(0.8em + 1vh);
+}
 `
 const Description = styled.div`
 color: black;
 font-size: calc(0.6em + 1vh);
 padding: 0.5rem 0;
 font-family: 'Montserrat', sans-serif;
-font-size: 20px;
 strong{
     margin-bottom: 1rem;
     text-transformation: uppercase;
 }
 p{
     margin-left: 2rem;
+}
+@media (max-width: 25em) {
+    font-size: calc(0.5em + 1vh);
+}
+@media (max-width: 50em) {
+    font-size: calc(0.8em + 1vh);
 }
 `
 
@@ -84,7 +122,8 @@ function Skill() {
                     <Programmer width={40} height={40} /> Programmer
                 </Title>
                 <Description>
-                    I love to solve new problems.
+                    I love to solve new problems.sadddddddddddddddddjhsdihs diahsiaohsfa uihfaui fhauifha fhyafgykugfu yafg yugdyuf gyadfg ygf kyhfu gyhufd 
+                    sau dhfluisdf yhkusfa huiszf bhjias fihui fas sa ffhu ;auf ;
                 </Description>
             </Main>
         </Box>
