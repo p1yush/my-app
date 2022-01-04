@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
+import ParticleComponent from '../smallComponents/ParticleComponent';
 import SocialIcons from '../smallComponents/SocialIcons'
 
 const Contact = styled.a`
@@ -82,6 +83,8 @@ font-size: 17px;
 
 function Section() {
     return (
+      <>
+      <ParticleComponent />
       <motion.div initial={{opacity: 0}} transition={{delay: 0.1}} animate={{opacity: 1}}>
       <SocialIcons />
       <Contact href="mailto:rr2rinku@gmail.com">
@@ -127,6 +130,7 @@ function Section() {
         </div>
       </section>
       </motion.div>
+      </>
     )
 }
 

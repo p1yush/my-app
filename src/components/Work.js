@@ -7,9 +7,8 @@ import { motion } from "framer-motion";
 
 const Box = styled.div`
 background-color: #FFE3E3; 
-height:400vh;
+height: 150vh;
 position: relative;
-height; 40vh;
 display: flex;
 align-items: center;
 `
@@ -17,9 +16,19 @@ const Main = styled(motion.ul)`
 position: fixed;
 top: 12rem;
 left: calc(10rem + 15vh);
+height: 40vh;
 display: flex;
 color: white;
 font-family: 'Montserrat', sans-serif;
+@media (max-width: 50em) {
+    left: calc(8rem + 15vw);
+}
+@media (max-width: 40em) {
+    left: calc(2rem + 15vw);
+}
+@media (max-width: 25em) {
+    left: calc(1rem + 15vw);
+}
 `
 const container = {
     hidden: {opacity: 0},
@@ -31,7 +40,6 @@ const container = {
         }
     }
 }
-
 
 function Work() {
     const ref = useRef(null);

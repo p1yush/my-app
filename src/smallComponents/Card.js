@@ -14,18 +14,39 @@ display: flex;
 flex-direction: column;
 justify-content: space-between;
 border: 1px solid black;
-transition: transform .2s;
-&:hover {
-    -ms-transform: scale(1.1); 
-  -webkit-transform: scale(1.1); 
-  transform: scale(1.1); 
+@media (max-width: 50em) {
+    width: 16rem;
+    margin-right: 6rem;
+    height: 35vh;
+}
+@media (max-width: 45em) {
+    width: 14rem;
+    margin-right: 4rem;
+    height: 35vh;
+}
+@media (max-width: 25em) {
+    width: 12rem;
+    margin-right: 4rem;
+    height: 35vh;
+    padding: 1.5rem;
+}
+@media (max-width: 20em) {
+    width: 10rem;
+    margin-right: 4rem;
+    height: 40vh;
 }
 `
 const Title = styled.h2`
 font-size: calc(1em + 0.5vw);
 `
-const Description = styled.h2`
+const Description = styled.h4`
 font-size: calc(0.8em + 0.3vh);
+@media (max-width: 25em) {
+    font-size: calc(0.7em + 0.3vw);
+}
+@media (max-width: 20em) {
+    font-size: calc(0.6em + 0.3vw);
+}
 `
 const Tags = styled.div`
 border-top: 2px solid black;
@@ -36,6 +57,9 @@ flex-wrap: wrap;
 const Tag = styled.span`
 margin-right: 1rem;
 font-size: calc(0.8em + 0.3vw);
+@media (max-width: 25em) {
+    font-size: calc(0.7em);
+}
 `
 const Footer = styled.footer`
 display: flex;
@@ -46,7 +70,7 @@ background-color: black;
 color: aliceblue;
 text-decoration: none;
 padding: 0.5rem calc(2rem + 2vh);
-border-radius: 50px;
+border-radius: 10px;
 transition: transform .2s;
 &:hover {
     -ms-transform: scale(1.1); 
@@ -64,23 +88,12 @@ transition: transform .2s;
   transform: scale(1.1); 
 }
 `
-const Item = {
-    hidden: {
-        scale: 0
-    },
-    show: {
-        scale: 1,
-        transition: {
-            type: 'spring',
-            duration: 0.4
-        }
-    }
-}
 
 function Card(props) {
     const{id, name, description, tags, demo, github} = props.data
     return (
-        <Box key={id} variants={Item}>
+        <Box key={id} whileHover={{scale: 1.1}}
+        whileTap={{scale: 0.9}}>
             <Title>{name}</Title>
             <Description>{description}</Description>
             <Tags>

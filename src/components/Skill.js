@@ -119,7 +119,7 @@ function Skill() {
                     <Programmer width={40} height={40} /> Programmer
                 </Title>
                 <Description>
-                    I love to solve new problems.sadddddddddddddddddjhsdihs diahsiaohsfa uihfaui fhauifha fhyafgykugfu yafg yugdyuf gyadfg ygf kyhfu gyhufd 
+                    I love to solve new problems.saddddddd diahsiaohsfa uihfaui fhauifha fhyafgykugfu yafg yugdyuf gyadfg ygf kyhfu gyhufd 
                     sau dhfluisdf yhkusfa huiszf bhjias fihui fas sa ffhu ;auf ;
                 </Description>
             </Main>
