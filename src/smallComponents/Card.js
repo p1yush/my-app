@@ -9,7 +9,7 @@ background-color: #FFE3E3;
 color: black;
 padding: 1.5rem 2rem;
 margin-right: 8rem;
-border-radius: 0 50px 0 50px;
+border-radius: 20px;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
@@ -46,7 +46,7 @@ background-color: black;
 color: aliceblue;
 text-decoration: none;
 padding: 0.5rem calc(2rem + 2vh);
-border-radius: 0 0 0 50px;
+border-radius: 50px;
 transition: transform .2s;
 &:hover {
     -ms-transform: scale(1.1); 

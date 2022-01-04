@@ -13,6 +13,12 @@ z-index: 1;
 font-family: 'Courier New', Courier, monospace;
 font-weight: bold;
 font-size: 20px;
+@media (max-width: 30em) {
+  font-size: 15px;
+}
+@media (max-width: 25em) {
+  font-size: 13px;
+}
 `
 
 const Work = styled(NavLink)`
@@ -26,6 +32,12 @@ z-index: 1;
 font-family: 'Courier New', Courier, monospace;
 font-weight: bold;
 font-size: 17px;
+@media (max-width: 30em) {
+  font-size: 14px;
+}
+@media (max-width: 25em) {
+  font-size: 12px;
+}
 `
 
 const BottomBar = styled.div`
@@ -45,6 +57,12 @@ z-index: 1;
 font-family: 'Courier New', Courier, monospace;
 font-weight: bold;
 font-size: 17px;
+@media (max-width: 30em) {
+  font-size: 14px;
+}
+@media (max-width: 25em) {
+  font-size: 12px;
+}
 `
 
 const Skill = styled(NavLink)`
@@ -54,6 +72,12 @@ z-index: 1;
 font-family: 'Courier New', Courier, monospace;
 font-weight: bold;
 font-size: 17px;
+@media (max-width: 30em) {
+  font-size: 14px;
+}
+@media (max-width: 25em) {
+  font-size: 12px;
+}
 `
 
 function Section() {
