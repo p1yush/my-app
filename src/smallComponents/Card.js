@@ -16,24 +16,20 @@ justify-content: space-between;
 border: 1px solid black;
 @media (max-width: 50em) {
     width: 16rem;
-    margin-right: 6rem;
-    height: 35vh;
+    margin-right: 4rem;
+    height: 40vh;
 }
 @media (max-width: 45em) {
     width: 14rem;
     margin-right: 4rem;
-    height: 35vh;
+    height: 40vh;
+    padding: 1.5rem;
 }
 @media (max-width: 25em) {
     width: 12rem;
     margin-right: 4rem;
-    height: 35vh;
-    padding: 1.5rem;
-}
-@media (max-width: 20em) {
-    width: 10rem;
-    margin-right: 4rem;
     height: 40vh;
+    padding: 1.5rem;
 }
 `
 const Title = styled.h2`
@@ -44,9 +40,6 @@ font-size: calc(0.8em + 0.3vh);
 @media (max-width: 25em) {
     font-size: calc(0.7em + 0.3vw);
 }
-@media (max-width: 20em) {
-    font-size: calc(0.6em + 0.3vw);
-}
 `
 const Tags = styled.div`
 border-top: 2px solid black;
@@ -56,7 +49,10 @@ flex-wrap: wrap;
 `
 const Tag = styled.span`
 margin-right: 1rem;
-font-size: calc(0.8em + 0.3vw);
+font-size: calc(0.7em + 0.3vw);
+@media (max-width: 30em) {
+    font-size: calc(0.9em);
+}
 @media (max-width: 25em) {
     font-size: calc(0.7em);
 }
@@ -76,6 +72,9 @@ transition: transform .2s;
     -ms-transform: scale(1.1); 
   -webkit-transform: scale(1.1); 
   transform: scale(1.1); 
+}
+@media (max-width: 25em) {
+    padding: 0.5rem calc(1rem + 2vh);
 }
 `
 const Git = styled.a`

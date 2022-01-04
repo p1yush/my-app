@@ -25,9 +25,38 @@ align-items: center;
 font-size: calc(0.7rem + 1vh);
 backdrop-filter: blur(4px);
 position: absolute;
-left: 27rem;
-top: 12rem;
+left: 25%;
+top: 20%;
 font-family: 'Montserrat', sans-serif;
+@media (max-width: 70em) {
+    width: 60vw;
+    height: 50vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: calc(0.5rem + 1vh);
+}
+@media (max-width: 60em) {
+    font-size: calc(0.4rem + 1vh);
+}
+@media (max-width: 50em) {
+    font-size: calc(0.3rem + 1vh);
+}
+@media (max-width: 40em) {
+    font-size: calc(0.2rem + 1vh);
+    line-height: 2;
+}
+@media (max-width: 30em) {
+    width: 50vw;
+    height: auto;
+    backdrop-filter: none;
+    margin-top: 2rem;
+    font-size: calc(0.1rem + 1vh);
+}
+@media (max-width: 20em) {
+    padding: 1rem;
+    font-size: calc(0.1rem + 1vh);
+}
 `
 
 

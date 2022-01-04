@@ -49,7 +49,8 @@ function Work() {
         const rotate = () => {
             element.style.transform = `translateX(${-window.pageYOffset}px)`
         }
-        return() => window.addEventListener('scroll', rotate)
+        window.addEventListener('scroll', rotate)
+        return() => window.removeEventListener('scroll', rotate)
     }, [])
     return (
         <>

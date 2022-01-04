@@ -83,7 +83,7 @@ strong{
     margin-bottom: 1rem;
     text-transformation: uppercase;
 }
-p{
+ul, p{
     margin-left: 2rem;
 }
 @media (max-width: 75em) {
@@ -98,8 +98,8 @@ function Skill() {
     return (
         <motion.div initial={{ y: 500, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ type: "spring", stiffness: 100, duration: 1.5 }}>
         <Box>
-            <ParticleComponent />
             <SocailIcons />
+            <ParticleComponent />
             <Main>
                 <Title>
                     <Developer width={40} height={40} /> Web Developer
