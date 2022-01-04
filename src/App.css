@@ -51,7 +51,7 @@ html, body, #root {
 }
 @media (max-width: 30em) {
   .about {
-    margin: 250px 0 0 100px;
+    margin: 250px 0 0 80px;
   }
 }
 @media (max-width: 25em) {
