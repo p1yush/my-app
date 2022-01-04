@@ -5,15 +5,15 @@ import { Github } from "./AllSvgs";
 const Box = styled(motion.li)`
 width: 16rem;
 height: 40vh;
-background-color: #FFE3E3;
-color: black;
+background-color: #191919;
+color: aliceblue;
 padding: 1.5rem 2rem;
 margin-right: 8rem;
 border-radius: 20px;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
-border: 1px solid black;
+border: 1px solid aliceblue;
 @media (max-width: 50em) {
     width: 16rem;
     margin-right: 4rem;
@@ -42,7 +42,7 @@ font-size: calc(0.8em + 0.3vh);
 }
 `
 const Tags = styled.div`
-border-top: 2px solid black;
+border-top: 2px solid aliceblue;
 padding-top: 0.5rem;
 display: flex;
 flex-wrap: wrap;
@@ -62,8 +62,9 @@ display: flex;
 justify-content: space-between;
 `
 const Link = styled.a`
-background-color: black;
-color: aliceblue;
+background-color: aliceblue;
+color: #191919;
+font-weight: bold;
 text-decoration: none;
 padding: 0.5rem calc(2rem + 2vh);
 border-radius: 10px;

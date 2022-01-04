@@ -9,11 +9,10 @@
     "framer-motion": "^4.1.17",
     "normalize.css": "^8.0.1",
     "react": "^17.0.2",
+    "react-anime": "^4.1.1",
     "react-dom": "^17.0.2",
-    "react-particles-js": "^3.6.0",
     "react-router-dom": "^6.0.2",
     "react-scripts": "4.0.3",
-    "react-tsparticles": "^1.37.5",
     "styled-components": "^5.3.3",
     "web-vitals": "^1.1.2"
   },

@@ -1,11 +1,11 @@
 import styled from "styled-components";
 import SocailIcons from "../smallComponents/SocialIcons";
-import ParticleComponent2 from "../smallComponents/ParticleComponent2";
 import { motion } from "framer-motion";
+import StarrySky from "../smallComponents/Sky";
 
 
 const Box = styled.div`
-background-color: #FFE3E3; 
+background-color: #191919; 
 width: 100vw;
 height:100vh;
 position: relative;
@@ -13,7 +13,7 @@ overflow: hidden;
 `
 const Main = styled.div`
 border: 2px solid;
-color: black;
+color: aliceblue;
 padding: 2rem;
 width: 50vw;
 hight: 60vh;
@@ -65,7 +65,7 @@ function About() {
         <motion.div initial={{ translateY: 500}} animate={{ translateY: 0 }}
         transition={{ type: "spring", stiffness: 100, duration: 1.5 }}>
         <Box>
-            <ParticleComponent2 />
+            <StarrySky />
             <SocailIcons />
             <Main> 
                 Hello, <br></br>
@@ -77,7 +77,6 @@ function About() {
              <br></br>
              I beleive by doing you can learn much more. You can connect with me via social links.
             </Main>
-            
         </Box>
         </motion.div>
     )

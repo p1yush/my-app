@@ -1,11 +1,10 @@
 import { Developer, Programmer } from "../smallComponents/AllSvgs";
 import styled from "styled-components";
 import SocailIcons from "../smallComponents/SocialIcons";
-import ParticleComponent from "../smallComponents/ParticleComponent";
 import { motion } from "framer-motion";
 
 const Box = styled.div`
-background-color: #FFE3E3; 
+background-color: #191919; 
 width: 100vw;
 height: 100vh;
 position: relative;
@@ -19,9 +18,9 @@ align-items: center;
 }
 `
 const Main = styled.div`
-border: 2px solid black;
-color: black;
-background-color: #FFE3E3; 
+border: 2px solid aliceblue;
+color: aliceblue;
+background-color: #191919; 
 padding: 2rem;
 width: 30vw;
 height: 60vh;
@@ -75,7 +74,7 @@ font-weight: bold;
 }
 `
 const Description = styled.div`
-color: black;
+color: aliceblue;
 font-size: 20px;
 padding: 0.5rem 0;
 font-family: 'Montserrat', sans-serif;
@@ -99,10 +98,9 @@ function Skill() {
         <motion.div initial={{ y: 500, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ type: "spring", stiffness: 100, duration: 1.5 }}>
         <Box>
             <SocailIcons />
-            <ParticleComponent />
             <Main>
                 <Title>
-                    <Developer width={40} height={40} /> Web Developer
+                    <Developer  width={40} height={40} /> Web Developer
                 </Title>
                 <Description>
                     I love to develop websites which speaks, clean, minimal and simple

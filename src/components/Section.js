@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
-import ParticleComponent from '../smallComponents/ParticleComponent';
 import SocialIcons from '../smallComponents/SocialIcons'
+import StarrySky from '../smallComponents/Sky';
 
 const Contact = styled.a`
-color: black;
+color: aliceblue;
 position: absolute;
 top: 2rem;
 right: calc(1rem + 2vw);
@@ -23,7 +23,7 @@ font-size: 20px;
 `
 
 const Work = styled(NavLink)`
-color: black;
+color: aliceblue;
 position: absolute;
 top: 50%;
 right: calc(1rem + 2vw);
@@ -52,7 +52,7 @@ justify-content: space-evenly;
 `
 
 const About = styled(NavLink)`
-color: black;
+color: aliceblue;
 text-decoration: none;
 z-index: 1;
 font-family: 'Courier New', Courier, monospace;
@@ -67,7 +67,7 @@ font-size: 17px;
 `
 
 const Skill = styled(NavLink)`
-color: black;
+color: aliceblue;
 text-decoration: none;
 z-index: 1;
 font-family: 'Courier New', Courier, monospace;
@@ -84,7 +84,7 @@ font-size: 17px;
 function Section() {
     return (
       <>
-      <ParticleComponent />
+      <StarrySky />
       <motion.div initial={{opacity: 0}} transition={{delay: 0.1}} animate={{opacity: 1}}>
       <SocialIcons />
       <Contact href="mailto:rr2rinku@gmail.com">

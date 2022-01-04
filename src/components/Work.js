@@ -6,7 +6,7 @@ import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 
 const Box = styled.div`
-background-color: #FFE3E3; 
+background-color: #191919; 
 height: 150vh;
 position: relative;
 display: flex;

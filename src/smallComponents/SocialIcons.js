@@ -10,6 +10,7 @@ position: fixed;
 bottom: 0;
 left: 2rem;
 z-index: 3;
+color: aliceblue;
 &>*:not(:last-child) {
     margin: 0.5rem 0;
     transition: transform 0.2s;
@@ -26,7 +27,7 @@ z-index: 3;
 const Line = styled(motion.span)`
 width: 2px;
 height: 8rem;
-background-color: black;
+background-color: aliceblue;
 `
 const Hover = styled.div`
 transition: transfor, .2s;
