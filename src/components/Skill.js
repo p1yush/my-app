@@ -44,12 +44,9 @@ transition: transform .2s;
     height: max-content;
 }
 @media (max-width: 50em) {
-    &>:nth-child(5) {
         margin-bottom: 5rem;
-    }
 }
 @media (max-width: 30em) {
-    &>:nth-child(5) {
       margin-bottom: 4rem;
   }
 `
@@ -79,7 +76,7 @@ font-weight: bold;
 `
 const Description = styled.div`
 color: black;
-font-size: calc(0.6em + 1vh);
+font-size: 20px;
 padding: 0.5rem 0;
 font-family: 'Montserrat', sans-serif;
 strong{
@@ -89,11 +86,11 @@ strong{
 p{
     margin-left: 2rem;
 }
-@media (max-width: 25em) {
-    font-size: calc(0.5em + 1vh);
+@media (max-width: 75em) {
+    font-size: 17px;
 }
-@media (max-width: 50em) {
-    font-size: calc(0.8em + 1vh);
+@media (max-width: 60em) {
+    font-size: 15px;
 }
 `
 
