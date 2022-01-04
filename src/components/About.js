@@ -67,12 +67,15 @@ function About() {
         <Box>
             <ParticleComponent2 />
             <SocailIcons />
-            <Main>
-            I'm a front-end developer located in India. I love to create simple yet beautiful websites with great user experience.
-
-             I'm interested in the whole frontend stack Like trying new things and building great projects. I'm an independent freelancer and blogger. I love to write blogs and read books.
-
-            I believe everything is an Art when you put your consciousness in it. You can connect with me via social links.
+            <Main> 
+                Hello, <br></br>
+                I am Piyush Singh currently doing Btech 2nd year from MAIT.
+                <br></br>
+                I'm a full-stack web developer located in India. I love to create simple yet beautiful websites with great user experience.
+                <br></br>
+                I'm interested in the whole web stack but i am more into trying frontend's stack like trying new things and building great projects. 
+             <br></br>
+             I beleive by doing you can learn much more. You can connect with me via social links.
             </Main>
             
         </Box>

@@ -119,8 +119,13 @@ function Skill() {
                     <Programmer width={40} height={40} /> Programmer
                 </Title>
                 <Description>
-                    I love to solve new problems.saddddddd diahsiaohsfa uihfaui fhauifha fhyafgykugfu yafg yugdyuf gyadfg ygf kyhfu gyhufd 
-                    sau dhfluisdf yhkusfa huiszf bhjias fihui fas sa ffhu ;auf ;
+                    I love to solve new problems. I am learning Data Structures.
+                </Description>
+                <Description>
+                    <strong>Skills</strong>
+                    <p>C++</p>
+                    <strong>Tools</strong>
+                    <p>Sublime Text</p>
                 </Description>
             </Main>
         </Box>
