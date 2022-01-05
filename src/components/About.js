@@ -80,7 +80,7 @@ function About() {
                 <br></br>
                 I'm interested in the whole web stack but i am more into trying frontend's stack like trying new things and building great projects. 
              <br></br>
-             I beleive by doing you can learn much more. You can connect with me via social links.
+             I believe by doing you can learn much more. You can connect with me via social links.
             </Main>
         </Box>
         </motion.div>
