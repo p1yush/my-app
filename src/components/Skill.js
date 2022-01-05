@@ -2,6 +2,7 @@ import { Developer, Programmer } from "../smallComponents/AllSvgs";
 import styled from "styled-components";
 import SocailIcons from "../smallComponents/SocialIcons";
 import { motion } from "framer-motion";
+import BackToHome from "../smallComponents/BackToHome";
 
 const Box = styled.div`
 background-color: #191919; 
@@ -113,6 +114,7 @@ function Skill() {
     return (
         <motion.div initial={{ y: 500, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ type: "spring", stiffness: 100, duration: 1.5 }}>
         <Box>
+            <BackToHome />
             <SocailIcons />
             <Main>
                 <Title>

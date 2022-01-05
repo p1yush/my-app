@@ -4,6 +4,7 @@ import workData from "./workData";
 import Card from "../smallComponents/Card";
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
+import BackToHome from "../smallComponents/BackToHome";
 
 const Box = styled.div`
 background-color: #191919; 
@@ -64,6 +65,7 @@ function Work() {
         <motion.div initial={{x: -100}} animate={{ x: 0 }}
         transition={{ type: "spring", stiffness: 100, duration: 1.5}}>
         <Box>
+        <BackToHome />
             <Main ref={ref} variants={container} initial='hidden' animate='show'> 
                 {workData.map(project => 
                 <Card key={project.id} data={project} />

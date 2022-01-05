@@ -2,6 +2,7 @@ import styled from "styled-components";
 import SocailIcons from "../smallComponents/SocialIcons";
 import { motion } from "framer-motion";
 import StarrySky from "../smallComponents/Sky";
+import BackToHome from "../smallComponents/BackToHome";
 
 
 const Box = styled.div`
@@ -69,6 +70,7 @@ function About() {
         transition={{ type: "spring", stiffness: 100, duration: 1.5 }}>
         <Box>
             <StarrySky />
+            <BackToHome />
             <SocailIcons />
             <Main> 
                 Hello, <br></br>

@@ -80,10 +80,10 @@ html, body, #root {
     padding: 150px 0 0 200px;
   }
   .about h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .about h3 {
-    font-size: 20px;
+    font-size: 15px;
   }
 }
 @media (max-height: 30em) {
@@ -91,10 +91,10 @@ html, body, #root {
     padding: 100px 0 0 200px;
   }
   .about h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .about h3 {
-    font-size: 20px;
+    font-size: 15px;
   }
 }
 @media (max-height: 25em) {
@@ -108,6 +108,40 @@ html, body, #root {
     font-size: 15px;
   }
 }
+@media (max-width: 25em) and (max-height: 45em) {
+  .about {
+    padding: 250px 0 0 70px;
+  }
+  .about h1 {
+    font-size: 3rem;
+  }
+  .about h3 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 30em) and (max-height: 45em) {
+  .about {
+    padding: 250px 0 0 80px;
+  }
+  .about h1 {
+    font-size: 3rem;
+  }
+  .about h3 {
+    font-size: 15px;
+  }
+}
+@media (max-width: 25em) and (max-height: 35em) {
+  .about {
+    padding: 150px 0 0 70px;
+  }
+  .about h1 {
+    font-size: 3rem;
+  }
+  .about h3 {
+    font-size: 15px;
+  }
+}
+
 
 
 #sky {
