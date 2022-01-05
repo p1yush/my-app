@@ -79,9 +79,9 @@ transition: transform .2s;
 }
 `
 const Git = styled.a`
-color: inherit;
 text-decoration: none;
 transition: transform .2s;
+color: aliceblue;
 &:hover {
     -ms-transform: scale(1.1); 
   -webkit-transform: scale(1.1); 

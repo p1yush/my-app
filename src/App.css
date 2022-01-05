@@ -20,7 +20,7 @@ html, body, #root {
 
 /* About */
 .about {
-  margin: 150px 0 0 200px;
+  padding: 150px 0 0 250px;
 }
 
 .about h1 {
@@ -39,7 +39,7 @@ html, body, #root {
 
 @media (max-width: 50em) {
   .about {
-    margin: 250px 0 0 130px;
+    padding: 250px 0 0 130px;
   }
   .about h1 {
     font-size: 4rem;
@@ -50,12 +50,12 @@ html, body, #root {
 }
 @media (max-width: 30em) {
   .about {
-    margin: 250px 0 0 80px;
+    padding: 250px 0 0 80px;
   }
 }
 @media (max-width: 25em) {
   .about {
-    margin: 250px 0 0 70px;
+    padding: 250px 0 0 70px;
   }
   .about h1 {
     font-size: 3rem;

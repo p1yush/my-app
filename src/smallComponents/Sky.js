@@ -12,7 +12,7 @@ class StarrySky extends React.Component {
         targets: ["#sky .star"],
         opacity: [
           {
-            duration: 700,
+            duration: 500,
             value: "0"
           },
           {
