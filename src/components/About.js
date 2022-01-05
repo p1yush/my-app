@@ -28,7 +28,7 @@ position: absolute;
 left: 25%;
 top: 20%;
 font-family: 'Montserrat', sans-serif;
-@media (max-width: 70em) {
+@media (max-width: 87em) {
     width: 60vw;
     height: 50vh;
     top: 50%;
@@ -36,13 +36,13 @@ font-family: 'Montserrat', sans-serif;
     transform: translate(-50%, -50%);
     font-size: calc(0.5rem + 1vh);
 }
-@media (max-width: 60em) {
+@media (max-width: 67em) {
     font-size: calc(0.4rem + 1vh);
 }
-@media (max-width: 50em) {
+@media (max-width: 60em) {
     font-size: calc(0.3rem + 1vh);
 }
-@media (max-width: 40em) {
+@media (max-width: 52em) {
     font-size: calc(0.2rem + 1vh);
     line-height: 2;
 }
@@ -56,6 +56,9 @@ font-family: 'Montserrat', sans-serif;
 @media (max-width: 20em) {
     padding: 1rem;
     font-size: calc(0.1rem + 1vh);
+}
+@media (max-height: 50em) {
+    font-size: calc(0.3rem + 1vh);
 }
 `
 

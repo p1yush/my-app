@@ -41,13 +41,17 @@ transition: transform .2s;
 @media (max-width: 50em) {
     width: 50vw;
     height: max-content;
+    margin-bottom: 4rem;
 }
-@media (max-width: 50em) {
+@media (max-width: 45em) {
         margin-bottom: 5rem;
 }
 @media (max-width: 30em) {
       margin-bottom: 4rem;
   }
+@media (max-height: 55em) {
+    height: max-content;
+}
 `
 const Title = styled.h2`
 display: flex;
@@ -72,6 +76,9 @@ font-weight: bold;
 @media (max-width: 25em) {
     font-size: calc(0.8em + 1vh);
 }
+@media (max-height: 40em) {
+    font-size: calc(0.8em + 1vh);
+}
 `
 const Description = styled.div`
 color: aliceblue;
@@ -90,6 +97,15 @@ ul, p{
 }
 @media (max-width: 60em) {
     font-size: 15px;
+}
+@media (max-height: 40em) {
+    font-size: 17px;
+}
+@media (max-height: 35em) {
+    font-size: 15px;
+}
+@media (max-height: 30em) {
+    font-size: 13px;
 }
 `
 

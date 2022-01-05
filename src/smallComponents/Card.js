@@ -31,6 +31,18 @@ border: 1px solid aliceblue;
     height: 40vh;
     padding: 1.5rem;
 }
+@media (max-height: 50em) {
+    width: 18rem;
+    padding: 1.5rem;
+}
+@media (max-height: 45em) {
+    width: 20rem;
+    padding: 1.5rem;
+}
+@media (max-height: 37em) {
+    width: 24rem;
+    padding: 1.5rem;
+}
 `
 const Title = styled.h2`
 font-size: calc(1em + 0.5vw);
@@ -39,6 +51,9 @@ const Description = styled.h4`
 font-size: calc(0.8em + 0.3vh);
 @media (max-width: 25em) {
     font-size: calc(0.7em + 0.3vw);
+}
+@media (max-height: 45em) {
+    font-size: calc(0.7em + 0.3vh);
 }
 `
 const Tags = styled.div`
@@ -54,6 +69,9 @@ font-size: calc(0.7em + 0.3vw);
     font-size: calc(0.9em);
 }
 @media (max-width: 25em) {
+    font-size: calc(0.7em);
+}
+@media (max-height: 45em) {
     font-size: calc(0.7em);
 }
 `
@@ -76,6 +94,9 @@ transition: transform .2s;
 }
 @media (max-width: 25em) {
     padding: 0.5rem calc(1rem + 2vh);
+}
+@media (max-height: 45em) {
+    padding-top: 0.5rem;
 }
 `
 const Git = styled.a`

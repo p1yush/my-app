@@ -20,6 +20,12 @@ font-size: 20px;
 @media (max-width: 25em) {
   font-size: 13px;
 }
+@media (max-height: 45em) {
+  font-size: 16px;
+}
+@media (max-height: 35em) {
+  font-size: 14px;
+}
 `
 
 const Work = styled(NavLink)`
@@ -37,6 +43,12 @@ font-size: 17px;
   font-size: 14px;
 }
 @media (max-width: 25em) {
+  font-size: 12px;
+}
+@media (max-height: 45em) {
+  font-size: 14px;
+}
+@media (max-height: 35em) {
   font-size: 12px;
 }
 `
@@ -64,6 +76,12 @@ font-size: 17px;
 @media (max-width: 25em) {
   font-size: 12px;
 }
+@media (max-height: 45em) {
+  font-size: 14px;
+}
+@media (max-height: 35em) {
+  font-size: 12px;
+}
 `
 
 const Skill = styled(NavLink)`
@@ -77,6 +95,12 @@ font-size: 17px;
   font-size: 14px;
 }
 @media (max-width: 25em) {
+  font-size: 12px;
+}
+@media (max-height: 45em) {
+  font-size: 14px;
+}
+@media (max-height: 35em) {
   font-size: 12px;
 }
 `

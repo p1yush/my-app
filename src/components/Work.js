@@ -29,6 +29,12 @@ font-family: 'Montserrat', sans-serif;
 @media (max-width: 25em) {
     left: calc(1rem + 15vw);
 }
+@media (max-height: 45em) {
+    top: 10rem;
+}
+@media (max-height: 40em) {
+    top: 8rem;
+}
 `
 const container = {
     hidden: {opacity: 0},

@@ -64,6 +64,50 @@ html, body, #root {
     font-size: 20px;
   }
 }
+@media (max-height: 45em) {
+  .about {
+    padding: 150px 0 0 200px;
+  }
+  .about h1 {
+    font-size: 5rem;
+  }
+  .about h3 {
+    font-size: 25px;
+  }
+}
+@media (max-height: 35em) {
+  .about {
+    padding: 150px 0 0 200px;
+  }
+  .about h1 {
+    font-size: 4rem;
+  }
+  .about h3 {
+    font-size: 20px;
+  }
+}
+@media (max-height: 30em) {
+  .about {
+    padding: 100px 0 0 200px;
+  }
+  .about h1 {
+    font-size: 4rem;
+  }
+  .about h3 {
+    font-size: 20px;
+  }
+}
+@media (max-height: 25em) {
+  .about {
+    padding: 80px 0 0 200px;
+  }
+  .about h1 {
+    font-size: 3rem;
+  }
+  .about h3 {
+    font-size: 15px;
+  }
+}
 
 
 #sky {
