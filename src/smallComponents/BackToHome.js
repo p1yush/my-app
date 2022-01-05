@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import { BackButton } from "./AllSvgs";
@@ -24,8 +25,22 @@ function BackToHome() {
     function backtoSection() {
         navigate("/");
     }
+    
+    useEffect(() => {
+        const listener = event => {
+            if(event.code === "Escape") {
+                backtoSection();
+                event.preventDefault();
+            }
+        }
+        document.addEventListener("keydown", listener);
+        return() => {
+            document.removeEventListener("keydown", listener);
+        }
+        // eslint-disable-next-line
+    }, [])
     return (
-        <Button><BackButton onClick = {backtoSection} /></Button>
+        <Button><BackButton onClick = {backtoSection}/></Button>
     )
 }
 

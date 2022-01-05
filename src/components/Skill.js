@@ -118,7 +118,7 @@ function Skill() {
             <SocailIcons />
             <Main>
                 <Title>
-                    <Developer  width={40} height={40} /> Web Developer
+                    <Developer width={40} height={40} /> Web Developer
                 </Title>
                 <Description>
                     I love to develop websites which speaks, clean, minimal and simple
