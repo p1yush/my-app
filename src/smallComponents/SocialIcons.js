@@ -73,7 +73,7 @@ function SocailIcons() {
         animate={{scale:[0,1,1.5,1]}}
         transition={{type:'spring', duration:0.8, delay: 0.6}}
         >
-            <a style={{color:'inherit'}} href="https://www.instagram.com/piyush2oo2/">
+            <a style={{color:'inherit'}} href="https://www.instagram.com/p1yush2oo2/">
              <Hover><Instagram width={25} height={25} fill='currentColor' /></Hover> 
             </a>
         </motion.div>
