@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import styled from "styled-components";
-import {Github, Twitter, Instagram, LinkedIn} from "./AllSvgs";
+import {Github, Twitter, Instagram, LinkedIn, Resume} from "./AllSvgs";
 
 const Icon = styled.div`
 display: flex;
@@ -41,6 +41,15 @@ transition: transfor, .2s;
 function SocailIcons() {
     return (
         <Icon>
+        <motion.div 
+        initial={{transform:"scale(0)"}}
+        animate={{scale:[0,1,1.5,1]}}
+        transition={{type:'spring', duration:0.7, delay: 0.9}}
+        >
+            <a style={{color:'inherit'}} href="https://drive.google.com/file/d/19sja8oUySQF7gREhSmf91-DlKeJOka4Q/view" target="_blank" rel="noreferrer">
+                <Hover><Resume width={25} height={25} fill='currentColor' /></Hover>
+            </a>
+        </motion.div>
         <motion.div 
         initial={{transform:"scale(0)"}}
         animate={{scale:[0,1,1.5,1]}}
