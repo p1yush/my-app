@@ -113,20 +113,19 @@ color: aliceblue;
 function Card(props) {
     const{id, name, description, tags, demo, github} = props.data
     return (
-        <Box key={id} whileHover={{scale: 1.1}}
-        whileTap={{scale: 0.9}}>
+        <Box key={id} whileHover={{scale: 1.1}}>
             <Title>{name}</Title>
             <Description>{description}</Description>
-            <Tags>
+            <Tags>  
                 {tags.map((t, id) => {
                     return <Tag key={id}>#{t}</Tag>
                 })}
             </Tags>
             <Footer>
-                <Link href={demo}>
+                <Link href={demo} target="_blank">
                     Visit
                 </Link>
-                <Git href={github}>
+                <Git href={github} target="_blank">
                     <Github width={30} height={30} />
                 </Git>
             </Footer>

@@ -14,6 +14,14 @@ export const workData = [
         tags: ["react", "styledComponents"],
         demo: "https://keeper1-app.netlify.app/",
         github: "https://github.com/p1yush/keeper-app"
+    },
+    {
+        id: 3,
+        name: "GetSetWeb Website",
+        description: "A simple keeper app build using React",
+        tags: ["react", "styledComponents", "email.js", "framer-motion"],
+        demo: "https://getsetweb.co",
+        github: "https://github.com/p1yush/getsetweb"
     }
 ]
 
